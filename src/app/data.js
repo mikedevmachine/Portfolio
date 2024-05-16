@@ -15,101 +15,72 @@ Websites:
 }
 
 */
-
+export const aboutData = {
+  aboutMe: "About Me",
+  aboutMeText: "Hey there! I'm a junior full stack developer who traded swimming lanes and boxing rings for lines of code. When I'm not debugging, you'll find me indulging my inner anime otaku or reminiscing about my days in sales, where I mastered the art of persuasion. From making waves in the pool to crafting epic digital solutions, I'm here to turn your coding dreams into reality with a touch of charm and a sprinkle of anime magic! So, let's dive into your project and make some coding waves together! ",
+  atm : "@TM",
+  atmText : "@AWS re/Start program && projects",
+  exp : "XP",
+  expText : "Ex-Student @ CodeForAll_",
+}
 export const projectsData = [
   {
     id: 1,
-    name: "EcoTracker",
-    description: "Track your carbon footprint",
-    date: "2022-08-15",
-    demoLink: "https://ecotracker.example.com",
+    name: "SharK Game",
+    description: "Eat your master coders to get score",
+    date: "2024-02-10",
+    demoLink: "https://fluxmachine.itch.io/sharkgame",
   },
   {
     id: 2,
-    name: "ArtGallery Online",
-    description: "Digital art showcase platform",
-    date: "2022-06-20",
-    demoLink: "https://artgalleryonline.example.com",
+    name: "Whack-a-Mole",
+    description: "Terminal multi player game using tcp chat",
+    date: "2024-03-03",
+    demoLink: "https://github.com/mikedevmachine/Whack-a-mole",
   },
-  {
+   
+   {
     id: 3,
-    name: "BudgetPlanner",
-    description: "Plan and track expenses",
-    date: "2022-09-10",
-    demoLink: "https://budgetplanner.example.com",
+    name: "Zen Masters",
+    description: "JavaScript Single Page Application",
+    date: "2024-04-15",
+    demoLink: "",
   },
   {
     id: 4,
-    name: "HealthBeat",
-    description: "Monitor heart rate zones",
-    date: "2022-05-30",
-    demoLink: "https://healthbeat.example.com",
+    name: "3D Portfolio",
+    description: "Three.js Next.js TailwindCSS",
+    date: "2024-05-15",
+    demoLink: "",
   },
-  {
-    id: 5,
-    name: "RecipeFinder",
-    description: "Discover new recipes",
-    date: "2022-07-12",
-    demoLink: "https://recipefinder.example.com",
-  },
-  {
-    id: 6,
-    name: "JourneyLogger",
-    description: "Log your travels",
-    date: "2022-10-01",
-    demoLink: "https://journeylogger.example.com",
-  },
-  {
-    id: 7,
-    name: "StudyBuddy",
-    description: "Collaborative learning platform",
-    date: "2022-04-18",
-    demoLink: "https://studybuddy.example.com",
-  },
-  {
-    id: 8,
-    name: "TechTalk",
-    description: "Tech news aggregator",
-    date: "2022-11-05",
-    demoLink: "https://techtalk.example.com",
-  },
-  {
-    id: 9,
-    name: "FitTrack",
-    description: "Fitness and workout tracker",
-    date: "2022-03-22",
-    demoLink: "https://fittrack.example.com",
-  },
-  {
-    id: 10,
-    name: "MindfulMoments",
-    description: "Meditation and mindfulness app",
-    date: "2022-02-14",
-    demoLink: "https://mindfulmoments.example.com",
-  },
+   
+
 ];
 
 export const BtnList = [
-  { label: "Home", link: "/", icon: "home", newTab: false },
-  { label: "About", link: "/about", icon: "about", newTab: false },
-  { label: "Projects", link: "/projects", icon: "projects", newTab: false },
-  { label: "Contact", link: "/contact", icon: "contact", newTab: false },
+  
+  { label: "About",
+   link: "/about",
+    icon: "about",
+     newTab: false },
+
+  { 
+    label: "Projects",
+   link: "/projects",
+    icon: "projects",
+     newTab: false 
+    },
+ 
   {
     label: "Github",
-    link: "https://www.github.com/codebucks27",
+    link: "https://github.com/mikedevmachine",
     icon: "github",
     newTab: true,
   },
   {
     label: "LinkedIn",
-    link: "https://www.linkedin.com/in/codebucks",
+    link: "https://www.linkedin.com/in/mikedevres/",
     icon: "linkedin",
-    newTab: true,
-  },
-  {
-    label: "X",
-    link: "https://www.x.com/code_bucks",
-    icon: "twitter",
     newTab: true,
   },
   {
@@ -119,5 +90,6 @@ export const BtnList = [
     newTab: true,
   },
 ];
+
 
 
