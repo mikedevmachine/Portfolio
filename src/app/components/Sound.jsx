@@ -24,6 +24,7 @@ const Modal = ({ onClose, toggle}) => {
     )
 
 }
+
 const Sound = () => {
     
     const audioRef = useRef(null);
@@ -47,8 +48,9 @@ const Sound = () => {
     useEffect(() => {
        
         const consent = localStorage.getItem('musicConsent')
+        const consentTime = localStorage.getItem('consentTime')
 
-        if(consent){
+        if(consent && consentTime && new Date(consentTime).getTime() + 3*24*60*60*1000 > new Date()){
             setIsPlaying(consent === 'true')
             if(consent === 'true'){
                 ['click', 'keydown', 'touchstart'].forEach(event => {
@@ -60,13 +62,16 @@ const Sound = () => {
             
         }
 }, [])
+        
+            
     const toggle = () => {
 
       const newState = !isPlaying;
         setIsPlaying(!isPlaying)
         
-        newState ? audioRef.current.play() : audioRef.current.pause()
-        localStorage.setItem('musicConsent', String(newState))
+        newState ? audioRef.current.play() : audioRef.current.pause();
+        localStorage.setItem('musicConsent', String(newState));
+        localStorage.setItem('consentTime', new Date().toISOString());
         setShowModal(false)
     }
 
@@ -75,7 +80,8 @@ const Sound = () => {
 
 
             {
-                showModal && <Modal onClose={() => setShowModal(false)} toggle={toggle} />
+                showModal && 
+                <Modal onClose={() => setShowModal(false)} toggle={toggle} />
             }
 
             <audio ref = {audioRef}  loop>
@@ -93,8 +99,8 @@ transition={{delay: 1}}
     className="w-10 h-10 xs:w-14 xs:h-14 rounded-full text-foreground flex items-center justify-center cursor-pointer z-50 p-2.5 xs:p-4 
     bg-background/20 border border-accent/30 border-solid backdrop-blur-[6px] shadow-glass-inset
     hover:shadow-glass-sm"
-        aria-label = {'home'}
-         name = {'home'}>
+        aria-label = {'Sound Control Button'}
+         name = {'Sound Control Button'}>
             
             {   isPlaying ?
             <Volume2 className="w-full h-full text-foreground group-hover:text-accent" strokeWidth={1.5} /> :
