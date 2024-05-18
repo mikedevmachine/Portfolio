@@ -44,14 +44,14 @@ export const projectsData = [
     name: "Zen Masters",
     description: "JavaScript Single Page Application",
     date: "2024-04-15",
-    demoLink: "",
+    demoLink: "https://github.com/mikedevmachine/ZenMasters",
   },
   {
     id: 4,
     name: "3D Portfolio",
     description: "Three.js Next.js TailwindCSS",
     date: "2024-05-15",
-    demoLink: "",
+    demoLink: "/",
   },
    
 
