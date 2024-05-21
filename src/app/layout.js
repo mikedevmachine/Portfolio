@@ -24,9 +24,9 @@ export default function RootLayout({ children }) {
     
     <html lang="en">
 
-      <head> 
+      <Head> 
         <link rel ="icon" href="/favicon.ico"/>
-      </head>
+      </Head>
       <body className={clsx(inter.variable, "bg-background text-foreground")}>
         {children}
         <FireFliesBackground />
