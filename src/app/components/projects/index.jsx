@@ -1,6 +1,8 @@
 'use client'
 import ProjectLayout from "./ProjectLayout"
 import { motion } from "framer-motion"
+import { useEffect } from "react"
+
 
 const container = {
     hidden: { opacity: 0 },
@@ -14,7 +16,9 @@ const container = {
 
 }
 
-const ProjectList = ({ projects }) => { 
+const ProjectList = ({ projects }) => {
+    
+    
  return (
     <motion.div 
     

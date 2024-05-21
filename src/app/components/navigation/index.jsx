@@ -30,7 +30,10 @@ const Navigation = () => {
     const isMedium = size>=768;
 
     
-    return (  
+    return ( 
+        
+        
+
         <div  className="w-full fixed h-screen flex items-center justify-center">
             
             <ResponsiveComponent>
@@ -57,7 +60,11 @@ const Navigation = () => {
                             
                     })}
                     </motion.div>
+
+                    
                 :
+
+
                         <>
                          <div className="w-full px-2.5 xs:p-0 xs:w-max flex flex-col space-y-4 items-start xs:items-center
                           justify-center relative group"
